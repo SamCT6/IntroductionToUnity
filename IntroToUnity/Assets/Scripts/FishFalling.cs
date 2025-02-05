@@ -11,7 +11,7 @@ public class FishFalling : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        InvokeRepeating("FishFall", 2, 1.5f);
+        InvokeRepeating("FishFall", 2, 1);
     }
 
     // Update is called once per frame
