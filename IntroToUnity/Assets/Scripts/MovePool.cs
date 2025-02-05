@@ -1,3 +1,4 @@
+using UnityEditor.Build.Content;
 using UnityEngine;
 
 public class MovePool : MonoBehaviour
@@ -18,4 +19,15 @@ public class MovePool : MonoBehaviour
         transform.position = new Vector2(pos.x, transform.position.y);
 
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        Debug.Log("OnCollisionEnter2D");
+
+        Destroy(collision.gameObject);
+
+        GameManager.Instance.IncScore(1);
+
+    }
+
 }
