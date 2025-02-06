@@ -21,7 +21,6 @@ public class Floor : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (!destroyed){
-            
             Destroy(collision.gameObject);
             destroyed = true;
         }
