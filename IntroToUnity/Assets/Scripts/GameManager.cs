@@ -4,7 +4,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
 
-
+    public AudioSource audioSource;
     public static GameManager Instance { get; private set; }
 
     int score = 0;
