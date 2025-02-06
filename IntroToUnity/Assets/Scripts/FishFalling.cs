@@ -17,25 +17,16 @@ public class FishFalling : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+      if (transform.position.y < -3){
+        Destroy(gameObject);
+        }
     }
     void FishFall() {
          Vector3 spawnPos = new Vector3(Random.Range(spawnLimitXLeft, spawnLimitXRight), spawnPosY, 0);
-    // instantiate ball at random spawn location
-    Instantiate(Fish, spawnPos, Fish.transform.rotation);
-
-    }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        Debug.Log("OnCollisionEnter2D");
-
-        Destroy(collision.gameObject);
-
-        GameManager.Instance.IncScore(1);
-
-    }
-
+        // instantiate ball at random spawn location
+        Instantiate(Fish, spawnPos, Fish.transform.rotation);
+        //https://discussions.unity.com/t/invokerepeating-for-random-ball-spawn/229007
+}
 
 }
     

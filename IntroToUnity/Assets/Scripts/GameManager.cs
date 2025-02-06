@@ -33,6 +33,16 @@ public class GameManager : MonoBehaviour
         scoreText.text = "Score: " + score;
     }
 
+    public void DecScore(int ds)
+    {
+    score -= ds;
+    if (score < 0){
+        score = 0;
+    }
+    scoreText.text = "Score: " + score;
+
+    }
+
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
