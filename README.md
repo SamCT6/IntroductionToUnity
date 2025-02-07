@@ -6,4 +6,6 @@ crustacean red barriers, and a kelp green scoreboard. Had fun making this game, 
 Fish art is from https://opengameart.org/users/ryandansie. 
 
 Sam made the obstacle course and fish design. He also had the fish drop at random intervals. Mason coded the pull to move and the
-scoreboard. Both were vital to the development of the game idea.
+scoreboard. Both were vital to the development of the game idea. We worked together on adding sound and adding a decrease in the score 
+in the missing of fish, as well as publishing
+
