@@ -5,6 +5,7 @@ public class GameManager : MonoBehaviour
 {
 
     public AudioSource audioSource;
+    public AudioClip audioClip;
     public static GameManager Instance { get; private set; }
 
     int score = 0;
@@ -35,7 +36,10 @@ public class GameManager : MonoBehaviour
 
     public void DecScore(int ds)
     {
-    score -= ds;
+       
+        audioSource.PlayOneShot(audioClip);
+
+        score -= ds;
     if (score < 0){
         score = 0;
     }
