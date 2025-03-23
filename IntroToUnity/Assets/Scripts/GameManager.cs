@@ -6,9 +6,12 @@ public class GameManager : MonoBehaviour
 
     public AudioSource audioSource;
     public AudioSource audioSource2;
+    public AudioSource audioSource3;
 
-    public AudioClip audioClip2;
+    
     public AudioClip audioClip;
+    public AudioClip audioClip2;
+    public AudioClip audioClip3;
     public static GameManager Instance { get; private set; }
 
     int score = 0;
@@ -52,6 +55,10 @@ public class GameManager : MonoBehaviour
 
     }
 
+    public void PlayTwinkle()
+    {
+        audioSource3.PlayOneShot(audioClip3);
+    }
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created

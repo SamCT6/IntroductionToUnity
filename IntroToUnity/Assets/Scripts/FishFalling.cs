@@ -33,6 +33,8 @@ public class FishFalling : MonoBehaviour
 
     void GoldFishFall()
     {
+        GameManager.Instance.PlayTwinkle();
+
         Vector3 spawnPos = new Vector3(Random.Range(spawnLimitXLeft, spawnLimitXRight), spawnPosY, 0);
         // instantiate ball at random spawn location
         Instantiate(GoldFish, spawnPos, GoldFish.transform.rotation);

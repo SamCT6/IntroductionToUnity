@@ -2,6 +2,11 @@ using UnityEngine;
 
 public class MovePool : MonoBehaviour
 {
+
+   
+
+
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -27,6 +32,8 @@ public class MovePool : MonoBehaviour
         if (collision.gameObject.tag == "GoldFish")
         {
             GameManager.Instance.IncScore(5);
+
+            
 
             Debug.Log("OnCollisionEnter2D");
 

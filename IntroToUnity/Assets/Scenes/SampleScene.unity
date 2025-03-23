@@ -447,7 +447,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 5838c312b6a2d524b9233f1c359b8c1d, type: 3}
   m_Resource: {fileID: 8300000, guid: 5838c312b6a2d524b9233f1c359b8c1d, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -1660,8 +1660,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioSource: {fileID: 1926339005}
   audioSource2: {fileID: 1057023409}
-  audioClip2: {fileID: 8300000, guid: 3b5a3f2e231071e4299a26fee5c02715, type: 3}
+  audioSource3: {fileID: 260197464}
   audioClip: {fileID: 8300000, guid: a51e50c66a45f4a12bdb6bb9c02e729a, type: 3}
+  audioClip2: {fileID: 8300000, guid: 3b5a3f2e231071e4299a26fee5c02715, type: 3}
+  audioClip3: {fileID: 8300000, guid: 5838c312b6a2d524b9233f1c359b8c1d, type: 3}
   scoreText: {fileID: 1138194313}
 --- !u!4 &1167504505
 Transform:
