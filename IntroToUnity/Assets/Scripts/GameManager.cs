@@ -5,6 +5,9 @@ public class GameManager : MonoBehaviour
 {
 
     public AudioSource audioSource;
+    public AudioSource audioSource2;
+
+    public AudioClip audioClip2;
     public AudioClip audioClip;
     public static GameManager Instance { get; private set; }
 
@@ -30,6 +33,8 @@ public class GameManager : MonoBehaviour
 
     public void IncScore(int ds)
     {
+        audioSource2.PlayOneShot(audioClip2);
+
         score += ds;
         scoreText.text = "Score: " + score;
     }
