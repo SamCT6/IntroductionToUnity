@@ -23,11 +23,26 @@ public class MovePool : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("OnCollisionEnter2D");
 
-        Destroy(collision.gameObject);
+        if (collision.gameObject.tag == "GoldFish")
+        {
+            GameManager.Instance.IncScore(5);
 
-        GameManager.Instance.IncScore(1);
+            Debug.Log("OnCollisionEnter2D");
+
+            Destroy(collision.gameObject);
+        }
+
+        else
+        {
+            Debug.Log("OnCollisionEnter2D");
+
+            Destroy(collision.gameObject);
+
+            GameManager.Instance.IncScore(1);
+
+        }
+
 
     }
 
